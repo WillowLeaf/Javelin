@@ -2,7 +2,7 @@ void Preprocessor::preprocess(const char *dest, const char *src)
 {
 	FILE *fFrom = fopen(src, "r");
 	if (fFrom == NULL) {
-		perror("ERROR: Cannot open file source file\n");
+		perror("ERROR: Cannot open source file\n");
 	}
 	FILE *fTo = fopen(dest, "w");
 	if (fTo == NULL) {
